@@ -9,3 +9,11 @@
   ExpiresDefault  "access plus 0 seconds"
 
 </IfModule>
+
+
+
+# due to the .htaccess file, special care to avoid the forbidden issue when XHRing
+
+<FilesMatch "\.htaccess\.md">
+  Allow from all
+</FilesMatch>
