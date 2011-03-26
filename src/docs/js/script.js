@@ -37,10 +37,15 @@
               .highlight()
               
               .disqus({
-                disqusUrl: 'http://example.com/test/hashbang/article/{id}',
-                disqusShortname: 'h5bdocstest'
+                // we can't use # in this url, otherwise thread won't be correctly referenced
+                dsqUrl: 'http://example.com/test/hashbang/article/{id}',
+                dsqShortname: 'h5bdocstest'
+              })
+              
+              // analytics
+              .ga({
+                uid: 'UA-22315681-1'
               });
-                            
         });
     });
     
