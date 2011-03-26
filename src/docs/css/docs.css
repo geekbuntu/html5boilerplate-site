@@ -39,6 +39,11 @@
 .wikiconvertor #footer p:last-child{font-size:1em !important;margin-top:2em;position:absolute;right:1em;}
 .wikiconvertor #footer{position:inherit;}
 
+/** disqus **/
+#dsq-content {font-size: 12px;line-height: 1.5em;}
+
+#dsq-content {text-align:left;}
+
 /** special care of syntax highlight **/
 .wikiconvertor .syntaxhighlighter { overflow: auto; }
 .wikiconvertor .syntaxhighlighter .lines { width: auto !important; }

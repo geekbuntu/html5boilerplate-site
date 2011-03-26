@@ -11,7 +11,7 @@
     require(
     
     // Load in modules  
-    ['app/modules/wiki', 'app/modules/messaging', 'app/modules/history', 'app/modules/highlight'],
+    ['app/modules/wiki', 'app/modules/messaging', 'app/modules/history', 'app/modules/highlight', 'app/modules/disqus'],
     
     function(wiki, messaging, history, highlight) {
         
@@ -34,7 +34,12 @@
               .messaging()
 
               // Allow the hightlight of code snippets using SyntaxHighligter
-              .highlight();
+              .highlight()
+              
+              .disqus({
+                disqusUrl: 'http://example.com/test/hashbang/article/{id}',
+                disqusShortname: 'h5bdocstest'
+              });
                             
         });
     });
