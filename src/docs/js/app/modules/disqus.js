@@ -71,7 +71,6 @@
       },
 
       clearDisqus: function() {
-        console.log('clearDisqus', this, arguments);
         var searchFor = "disqus.com";
 
         $('iframe[src*="{0}"]'.replace(/\{0\}/, searchFor))
@@ -86,7 +85,6 @@
       },
 
       initDisqus: function(id) {
-        console.log('initDisqus', this, arguments);
         this.disqus_developer = global.disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? 1 : undefined,
         this.disqus_url = global.disqus_url = this.options.dsqUrl.replace('{id}', id),
         this.disqus_identifier = global.disqus_identifier = id,

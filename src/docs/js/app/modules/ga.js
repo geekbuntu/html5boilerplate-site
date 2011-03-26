@@ -22,8 +22,7 @@
       },
 
       init: function(options, elem) {
-        
-        this.gaq = global._gaq = [['_setAccount', this.options.uid],['_trackPageview']];
+        global._gaq = [['_setAccount', this.options.uid],['_trackPageview']];
         
         // mathiasbynens.be/notes/async-analytics-snippet
         (function(d,t) {
@@ -36,7 +35,7 @@
       },
 
       ping: function(id) {
-        this.gaq.push(['_trackPageview', '/docs/#' + id]);
+        global._gaq.push(['_trackPageview', '/docs/#' + id]);
       }
     }));
 

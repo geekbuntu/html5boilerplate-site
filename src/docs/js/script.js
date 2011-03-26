@@ -11,9 +11,9 @@
     require(
     
     // Load in modules  
-    ['app/modules/wiki', 'app/modules/messaging', 'app/modules/history', 'app/modules/highlight', 'app/modules/disqus'],
+    ['app/modules/wiki', 'app/modules/messaging', 'app/modules/history', 'app/modules/highlight', 'app/modules/disqus', 'app/modules/ga'],
     
-    function(wiki, messaging, history, highlight) {
+    function(wiki, messaging, history, highlight, ga) {
         
         $(function() {
           var container = $('#container');
